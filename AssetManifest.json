@@ -24,6 +24,11 @@
 				{
 					"Source": "cfgsrc",
 					"Destination": "",
+					"Pattern": "mapcycle.txt"
+				},
+				{
+					"Source": "cfgsrc",
+					"Destination": "",
 					"Pattern": "titles.txt"
 				},
 				{
@@ -45,6 +50,11 @@
 					"Source": "fgdsrc",
 					"Destination": "",
 					"Pattern": "halflife-unified.fgd"
+				},
+				{
+					"Source": "gfxsrc/shell",
+					"Destination": "gfx/shell",
+					"Pattern": "*.lst"
 				},
 				{
 					"Source": "gfxsrc/vgui",
@@ -97,7 +107,7 @@
 				{
 					"Source": "spritesrc",
 					"Destination": "sprites",
-					"Pattern": "*.txt"
+					"Pattern": "*.json"
 				}
 			]
 		},

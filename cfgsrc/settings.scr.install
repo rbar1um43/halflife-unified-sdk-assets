@@ -83,34 +83,24 @@ DESCRIPTION SERVER_OPTIONS
 		{ "0.000000" }
 	}
 
-	"mp_falldamage"
+	"mp_createserver_gamemode"
 	{
-		"#Valve_Falling_Damage"
+		"#Valve_GameMode"
 		{
 			LIST
-			"#Valve_Normal" "0"
-			"#Valve_Realistic" "1"
+			// Note: see GameModeIndexToString in CGameRules.cpp
+			"Autodetect" "0"
+			"Deathmatch" "1"
+			"Teamplay" "2"
+			"Capture The Flag" "3"
+			"Co-op" "4"
 		}
-		{ "0.000000" }
-	}
-
-	"mp_teamplay"
-	{
-		"#Valve_Teamplay"
-		{ BOOL }
 		{ "0" }
 	}
 
 	"mp_friendlyfire"
 	{
 		"#Valve_Friendly_Fire"
-		{ BOOL }
-		{ "0" }
-	}
-
-	"mp_weaponstay"
-	{
-		"#Valve_Weapons_Stay"
 		{ BOOL }
 		{ "0" }
 	}
@@ -127,13 +117,6 @@ DESCRIPTION SERVER_OPTIONS
 		"#Valve_Footsteps"
 		{ BOOL }
 		{ "1" }
-	}
-
-	"mp_flashlight"
-	{
-		"#Valve_Flashlight"
-		{ BOOL }
-		{ "0" }
 	}
 
 	"mp_autocrosshair"
