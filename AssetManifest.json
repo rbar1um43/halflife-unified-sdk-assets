@@ -6,6 +6,11 @@
 			"Path": "%ModDirectory%",
 			"Filters": [
 				{
+					"Source": "campaignsrc",
+					"Destination": "campaigns",
+					"Pattern": "*.json"
+				},
+				{
 					"Source": "cfgsrc",
 					"Destination": "",
 					"Pattern": "server.cfg"
@@ -85,6 +90,12 @@
 				{
 					"Source": "resourcesrc",
 					"Destination": "resource",
+					"Pattern": "*.res",
+					"Recursive": true
+				},
+				{
+					"Source": "resourcesrc",
+					"Destination": "resource",
 					"Pattern": "*.txt",
 					"Recursive": true
 				},
@@ -107,7 +118,8 @@
 				{
 					"Source": "spritesrc",
 					"Destination": "sprites",
-					"Pattern": "*.json"
+					"Pattern": "*.json",
+					"Recursive": true
 				}
 			]
 		},

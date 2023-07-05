@@ -21,7 +21,7 @@
 			// Filenames ending with ".install" will be renamed to remove this extension after being added to the archive.
 			"IncludePatterns": [
 				"cl_dlls/client.dll",
-				"cl_dlls/OpenAL32.dll",
+				"cl_dlls/openal-hlu.dll",
 				"dlls/server.dll",
 				"delta.lst",
 				"game.ico",
@@ -34,6 +34,7 @@
 				"user.scr.install",
 				"titles.txt",
 				"*.wad",
+				"campaigns/**",
 				"cfg/**",
 				"classes/**",
 				"events/*.sc",

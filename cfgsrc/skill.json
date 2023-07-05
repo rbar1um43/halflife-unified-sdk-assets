@@ -516,6 +516,9 @@
 	"player_arm": 1,
 	"player_leg": 1,
 	
+	// Enables the buggy melee weapon behavior that allows for chainsaw-like effects.
+	"chainsaw_melee": 0,
+	
 	// Multiplayer weapon configuration
 	"crowbar_full_damage": 0,
 	"revolver_laser_sight": 0,
@@ -564,5 +567,6 @@
 	// If set to 1, weapons not flagged to be limited in world will respawn immediately
 	"weapon_instant_respawn": 0,
 	
-	"allow_weapon_dropping": 0
+	"allow_npc_item_dropping": 1,
+	"allow_player_weapon_dropping": 0
 }
