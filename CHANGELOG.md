@@ -9,6 +9,7 @@ This changelog lists all assets changes meant to be used with Half-Life Unified 
 Table of contents:
 * [FGD](#fgd)
 * [Models](#models)
+* [Sounds](#sounds)
 * [Sprites](#sprites)
 
 ## FGD
@@ -91,6 +92,10 @@ Table of contents:
 * Uses default scientist face textures instead of the custom Op4 ones
 * Added shared scientist items bodygroup with clipboard and stick
 * Added shared scientist sequences
+
+#### Cower scientist
+
+* Removed unneeded frame in LD/HD `cower_die` sequence
 
 #### Dead Barney
 
@@ -277,6 +282,9 @@ Table of contents:
 * Reworked hitboxes
 * Added Op4 green crate as 2nd skin
 * Fixed Op4 green crate stretched texture
+* Added missing polygons along accordion spine
+* Fixed sharp edges on spine polygons
+* Fixed rear-left spine vertex weight (Weighted to Neck3 instead of Neck4)
 
 #### Male BlackOps
 
@@ -435,7 +443,6 @@ Table of contents:
 ##### Egon
 
 * Removed right arm mesh in HD variant
-* Replaced unfinished LD sequences `fire1`, `fire2` with those from Op4
 * Removed loop option on HD sequences `altfireon`, `altfireoff`
 
 ##### Gauss
@@ -447,17 +454,14 @@ Table of contents:
 
 * Use HD Blue Shift animation `reload_noshot` for all HD variants
 * Removed unneeded hitboxes
-* Tweaked muzzle attachment offset in LD/HD variants
+* Tweaked muzzle attachment offset in HD variants
 * Added silencer bodygroup to HD variants
-* Added backfaces to clip in LD/HD variants
-* Fixed glitchy vertices in LD Op4/Blue Shift glock mesh
-* Reworked LD Op4/Blue Shift hands mesh rig to allow sharing animations
+* Added backfaces to clip in HD variants
 
 ##### Hand grenade
 
 * Use HD Op4 grenade texture for HD variants
 * Removed unneeded hitboxes
-* Use LD HL1 animations for LD Op4/Blue Shift variants for consistency
 
 ##### Knife
 
@@ -480,7 +484,6 @@ Table of contents:
 * Use Op4 missile mesh for LD variants
 * Added missing sequences `fidget2`, `holster2` to Op4/Blue Shift LD variants
 * Added missing sequence `fidget2` to HD variants
-* Use Op4 reload animation in LD variants
 
 ##### Satchel
 
@@ -495,7 +498,6 @@ Table of contents:
 * Removed unneeded hitboxes
 * Removed left arm in HD variants
 * Fixed glitchy hand vertices in LD/HD Op4 variants
-* Use LD HL1 animations for LD Blue Shift variant
 
 ##### Shock rifle
 
@@ -503,8 +505,6 @@ Table of contents:
 
 ##### Shotgun
 
-* Rigged Blue Shift hand mesh on top of HL1 skeleton
-* Use LD HL1 animations for all LD variants
 * Changed event 5001 option 41 to 31 in HD `shoot` sequence for consistency with LD sequences
 * Removed duplicate event 5001 in HD sequence `shoot_big`
 
@@ -519,8 +519,8 @@ Table of contents:
 
 ##### Tripmine
 
-* Use LD HL1 sequence `fidget` for LD Blue Shift sequence `fidget`
 * Removed loop option on HD sequence `arm1`
+* Moved LD/HD world tripmine to separate models
 
 #### World models
 
@@ -581,6 +581,18 @@ Table of contents:
 ##### Shotgun world model
 
 * Uses Op4 model mesh as a base
+
+##### Tripmine world model
+
+* Removed unneeded frames in world and ground sequences
+* Fixed tripmine clipping through floor in ground sequences
+* Added missing polygons to LD variant
+
+## Sounds
+
+### General
+
+* Added `buttons/bell1_alt.wav`
 
 ## Sprites
 

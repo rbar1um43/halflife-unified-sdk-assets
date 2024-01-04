@@ -52,6 +52,11 @@
 					"Pattern": "*.txt"
 				},
 				{
+					"Source": "textsrc",
+					"Destination": "",
+					"Pattern": "README.txt"
+				},
+				{
 					"Source": "eventsrc",
 					"Destination": "events",
 					"Pattern": "*.sc"
@@ -130,6 +135,12 @@
 					"Source": "soundsrc",
 					"Destination": "sound",
 					"Pattern": "*.json"
+				},
+				{
+					"Source": "soundsrc",
+					"Destination": "sound",
+					"Pattern": "*.wav",
+					"Recursive": true
 				},
 				{
 					"Source": "spritesrc",
